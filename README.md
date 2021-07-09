@@ -40,7 +40,7 @@ cert-pass=minhasenha
 
 `nano NetworkManagerOpenVpn.sh`
 
-### 3.1. Alterar `minhavpn` da variavel perfil para o nome da sua conexão vpn. A extensão `*.nmconnection` não deve ser definida aqui.
+### 3.1. Alterar `minhavpn` da variavel perfil para o nome da sua conexão vpn. A extensão `*.nmconnection` não deve ser definida aqui:
 
 `perfil=minhavpn`
 
