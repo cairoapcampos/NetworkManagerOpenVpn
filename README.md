@@ -5,9 +5,23 @@ Script para executar o OpenVpn via linha de comando
 
 Sistema Operacional: GNU/Linux Xubuntu 20.04
 
-## Configurações Iniciais
+## Etapa 1 - Configuração Básica da VPN
 
-Após configurar a vpn OpenVPN graficamente ao importar os arquivos `*.ovpn`, `*.p12` e `*.key` fazer as configurações seguintes.
+## 1.Mover arquivos da VPN e definir permissões
+
+Mover a pasta que possui os arquivos `*.ovpn`, `*.p12` e `*.key` para `/etc/openvpn/client/`. Supondo que a pasta chama `minhavpn` deveria-se
+fazer o seguinte:
+```
+cp -R minhavpn/ /etc/openvpn/client/
+chown -R usuario /etc/openvpn/client/minhavpn/
+chgrp -R usuario /etc/openvpn/client/minhavpn/
+```
+
+## 2.Configurar a VPN graficamente conforme o link seguinte: 
+
+https://support.purevpn.com/how-to-setup-openvpn-on-xubuntu-19-10
+
+## Etapa 2 - Definição de senha para execução via linha de comando
 
 ### 1.Entrar na pasta de perfis de conexão
 
@@ -33,7 +47,7 @@ cert-pass=minhasenha
 
 `systemctl restart network-manager`
 
-## Utilização do Script
+## Etapa 3 - Utilização do Script
 
 ### 1.Clonar repositório:
 `git clone https://github.com/cairoapcampos/NetworkManagerOpenVpn.git`
@@ -58,8 +72,6 @@ Alterar `minhavpn` da variavel perfil para o nome da sua conexão vpn. A extens�
 `./NetworkManagerOpenVpn.sh`
 
 ## Links Úteis:
-
-https://support.purevpn.com/how-to-setup-openvpn-on-xubuntu-19-10
 
 https://qastack.com.br/ubuntu/57339/connect-disconnect-from-vpn-from-the-command-line
 
