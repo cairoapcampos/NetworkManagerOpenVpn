@@ -3,7 +3,7 @@ Script para executar o OpenVpn via linha de comando
 
 ## Ambiente de Teste:
 
-Sistema Operacional: GNU/Linux Ubuntu 20.04
+Sistema Operacional: GNU/Linux Xubuntu 20.04
 
 ## Configurações Iniciais
 
