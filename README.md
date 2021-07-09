@@ -7,6 +7,8 @@ Sistema Operacional: GNU/Linux Xubuntu 20.04
 
 ## Configurações Iniciais
 
+Após configurar a vpn OpenVPN graficamente ao importar os arquivos `*.ovpn`, `*.p12` e `*.key` fazer as configurações seguintes.
+
 ### 1.Entrar na pasta de perfis de conexão
 
 `cd /etc/NetworkManager/system-connections/`
