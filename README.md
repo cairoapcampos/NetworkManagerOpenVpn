@@ -58,6 +58,9 @@ Alterar `minhavpn` da variavel perfil para o nome da sua conexão vpn. A extens�
 `./NetworkManagerOpenVpn.sh`
 
 ## Links Úteis:
+
+https://support.purevpn.com/how-to-setup-openvpn-on-xubuntu-19-10
+
 https://qastack.com.br/ubuntu/57339/connect-disconnect-from-vpn-from-the-command-line
 
 https://askubuntu.com/questions/444866/how-to-save-vpn-passwords-with-networkmanger-for-nmcli
